@@ -1,0 +1,24 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    instrumentationHook: true,
+  },
+  env: {
+    // NEXT_PUBLIC_STRIPE_PUBLIC_KEY: "pk_test_xeqIPdYS2PpKbHmKG4gJqpde",
+    // NEXT_PUBLIC_APTIBLE_DOMAIN: "https://app-66707.on-aptible.com",
+    NEXT_PUBLIC_STRIPE_PUBLIC_KEY: "pk_test_51PxnplP9I3xM61UrLbMAr06rpBkzLrFkaB2xxjSc6G5afMoC41NJ0GR2XCi1PUL2mks54HiXrVGnUIT1EglXiiYa00OZhtM31V",
+    NEXT_PUBLIC_DOMAIN: "https://localhost:3000",
+  },
+  images: {
+    remotePatterns: [
+      {
+        hostname: "imgcld.yatra.com",
+      },
+      {
+        hostname: "content.r9cdn.net",
+      },
+    ],
+  },
+};
+
+module.exports = nextConfig;
